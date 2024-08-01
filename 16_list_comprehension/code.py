@@ -5,18 +5,24 @@ squares = [x * 2 for x in numbers]
 
 friends = ["Rolf", "Sam", "Samantha", "Saurabh", "Jen"]
 starts_s = []
+print(f"""Friend list is :
+         {friends}""")
 
 for friend in friends:
     if friend.startswith("S"):
         starts_s.append(friend)
+print(f"starts_s is : {starts_s} " )
 
-print(starts_s)
+starts_s1 = [friend for friend in friends if friend.startswith("S")]
+
+print(f"""Friend list starting with  S are :
+          {starts_s1}""")
 
 
 # -- Can make a new list of friends whose name starts with S --
 
-friends = ["Rolf", "Sam", "Samantha", "Saurabh", "Jen"]
-starts_s = [friend for friend in friends if friend.startswith("S")]
+# friends = ["Rolf", "Sam", "Samantha", "Saurabh", "Jen"]
+# starts_s = [friend for friend in friends if friend.startswith("S")]
 
 print(starts_s)
 
